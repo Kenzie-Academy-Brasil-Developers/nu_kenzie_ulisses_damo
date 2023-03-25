@@ -1,0 +1,32 @@
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 355px;
+    height: 434px;
+    margin-left: 266px;
+    border: 1px solid var(-color-grey-3);
+}
+input{
+    align-items: center;
+    width: 314px;
+    height: 52px;
+    border: 2px solid var(color-grey-3);
+    border-radius: 8px;
+    background-color: var(-color-grey-3);
+}
+select{
+    width: 314px;
+    height: 52px;
+    border-radius: 8px;
+    background-color: var(-color-grey-3);
+
+}
+
+.SendCard{
+    width: 314px;
+    height: 48px;
+    background-color: var(--color-primary);
+    color: var(-color-grey-1);
+    border-radius: 8px;
+}

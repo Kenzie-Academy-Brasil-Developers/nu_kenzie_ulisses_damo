@@ -1,0 +1,9 @@
+.currentTotal p {
+    margin-left: 258px;
+}
+.currentTotal{
+    display: flex;
+    flex-direction: column;
+    width: 462px;
+    height: 159px;
+}
