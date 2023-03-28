@@ -1,12 +1,12 @@
-import { Header } from "./components/Header";
 import { List } from "./components/List";
+import {Header} from "./components/Header"
 import { Form } from "./components/Form";
 import { TotalMoney } from "./components/TotalMoney";
 import "./styles/global.css";
-import "./styles/Header.css";
 import { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 import "./styles/App.css";
+import styles from "./styles/pages/home.module.css";
 
 function App() {
   const [transactionList, setTrasactionList] = useState([]);
@@ -32,19 +32,27 @@ function App() {
     <main>
       <Header />
       <div className="App">
-        <Form
-          addTransactionToTransactionList={addTransactionToTransactionList}
-        ></Form>
-        <div className="cardsList">
-          <p>Resumo financeiro</p>
+        <div className={styles.container}>
+          <div className={styles.flexBox}>
+            <div className={styles.left}>
+              <Form
+                addTransactionToTransactionList={
+                  addTransactionToTransactionList
+                }
+              ></Form>
+              <TotalMoney transactionList={transactionList} />
+            </div>
+            <div className={styles.right}>
+              <p>Resumo financeiro</p>
 
-          <List 
-            transactionList={transactionList}
-            removeFromTransactionList={removeFromTransactionList}
-          ></List>
+              <List
+                transactionList={transactionList}
+                removeFromTransactionList={removeFromTransactionList}
+              ></List>
+            </div>
+          </div>
         </div>
       </div>
-      <TotalMoney transactionList={transactionList} />
     </main>
   );
 }

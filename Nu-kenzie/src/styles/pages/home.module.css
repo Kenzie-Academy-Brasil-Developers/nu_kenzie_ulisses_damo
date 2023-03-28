@@ -1,0 +1,30 @@
+.container{
+    width: 100%;
+    max-width: 1200px;
+    padding: 10px;
+    margin: 0 auto;
+}
+.flexBox{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+
+@media (min-width:1024px){
+
+    .flexBox {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .flexBox  .left , .flexBox  .right{
+
+        width: 100%;
+        
+    }
+    
+    .flexBox .left{
+        max-width: 360px;
+    }
+}

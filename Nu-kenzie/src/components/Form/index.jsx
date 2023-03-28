@@ -23,7 +23,7 @@ export function Form({ addTransactionToTransactionList }) {
 
   return (
     <form onSubmit={submit} className={styles.form}>
-      <h3>Descrição</h3>
+      <label>Descrição</label>
       <input
         type="text"
         placeholder="Digite aqui sua descrição"
@@ -33,15 +33,15 @@ export function Form({ addTransactionToTransactionList }) {
         }
       />
 
-      <p>Ex:Compra de roupas</p>
-      <h3>Valor (R$)</h3>
+      <p className="paragraph">Ex:Compra de roupas</p>
+      <label>Valor (R$)</label>
       <input
         type="number"
         placeholder="1"
         value={formData.money}
         onChange={(e) => setFormData({ ...formData, money: e.target.value })}
       />
-      <h3>tipo de valor</h3>
+      <label>Tipo de valor</label>
       <select
         name=""
         id=""

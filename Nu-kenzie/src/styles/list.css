@@ -1,0 +1,26 @@
+/* input{
+    background-color: rgba(248, 249, 250, 1);
+    ;
+    border: none;
+    padding: 0 16px;
+}
+ul{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+li{
+    display: flex;
+    background-color:rgba(248, 249, 250, 1);
+    width: 560px;
+    height: 87px;
+    border-radius: 8px;
+    border-left: 4px solid #03B898;
+}
+li button{
+    border: none;
+    width: 49px;
+    height: 19px;
+    border-radius: 2px;
+    background-color:#E9ECEF;
+} */

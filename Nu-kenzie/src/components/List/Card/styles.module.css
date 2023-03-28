@@ -1,0 +1,17 @@
+.transactionCard{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    justify-content: space-between;
+    background-color: var(--color-grey-1);
+    border-radius: 4px;
+    border-left: 4px solid var(--color-secondary);
+}
+.transactionCard button{
+    border: none;
+    border-radius: 4px;
+    background-color: var(--color-grey-2);
+    width: 49px;
+    height: 19px;
+}

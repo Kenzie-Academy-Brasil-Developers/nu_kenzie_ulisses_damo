@@ -3,10 +3,10 @@
     --color-primary: #FD377E;
     --color-primary-2: #E34981;
     --color-secondary: #03B898;
-    -color-grey-4: #212529;
-    -color-grey-3: #868E96;
-    -color-grey-2: #E9ECEF;
-    -color-grey-1: #F8F9FA;
+    --color-grey-4: #212529;
+    --color-grey-3: #868E96;
+    --color-grey-2: #E9ECEF;
+    --color-grey-1: #F8F9FA;
 
 
 }
@@ -18,3 +18,14 @@
     button{
         cursor: pointer;
     }
+
+    .paragraph{
+        font-size: 12px;
+        font-family: "Inter";
+        
+    }
+ *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+ }   
